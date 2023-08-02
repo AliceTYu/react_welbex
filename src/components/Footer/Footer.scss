@@ -1,0 +1,147 @@
+.footer{
+    padding-top: 55px;
+    padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @media (max-width: 1050px) {
+        flex-direction: column;
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
+
+    &__row{
+
+        &-contact{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+
+            @media (max-width: 1050px) {
+                align-items: start;
+            }
+        }
+    }
+
+    &__bl{
+        display: flex;
+        justify-content: space-between;
+        width: 700px;
+
+        @media (max-width: 730px) {
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    &__social{
+        @media (max-width: 850px) {
+            display: block;
+        }
+    }
+
+    &__column{
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 730px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.7px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: var(--dark-gray);
+
+        @media (max-width: 630px) {
+            font-size: 12px;
+        }
+    }
+
+    &__text{
+        line-height: 1.2;
+
+        &:not(:last-child){
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 630px) {
+            line-height: 1;
+        }
+    }
+
+
+    &__link{
+        color: var(--text-color);
+        text-decoration: none;
+
+        @media (max-width: 630px) {
+            font-size: 14px;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__botmenu{
+        display: flex;
+        flex-direction: row;
+        column-gap: 52px;
+
+        @media (max-width: 630px) {
+            column-gap: 45px;
+        }
+    }
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &:not(:last-child){
+            row-gap: 19px;
+
+            @media (max-width: 630px) {
+                row-gap: 10px;
+            }
+        }
+
+        @media (max-width: 1050px) {
+            align-items: start;
+        }
+    }
+
+    &__welbex{
+        font-family: 'Montserrat';
+        font-size: 12px;
+        line-height: 1.2;
+
+        &.underline{
+            text-decoration: underline;
+        }
+
+        &:not(:last-child){
+            margin-bottom: 5px;
+
+            @media (max-width: 630px) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
