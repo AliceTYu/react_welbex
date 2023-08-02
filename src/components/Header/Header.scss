@@ -11,7 +11,7 @@
 
     // background-color: purple;
 
-    &::before{
+    &::after{
         content: '';
         position: absolute;
         top: -290%;
@@ -21,6 +21,7 @@
         opacity: .5;
         background: #833AB4;
         filter: blur(196px);
+        z-index: -1;
 
         @media (max-width: 630px) {
             display: none;
